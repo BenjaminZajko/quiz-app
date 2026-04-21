@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: white;
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .otazka {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .odpoved {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+            background-color: #16213e;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .odpoved:hover {
+            background-color: #0f3460;
+        }
+
+        .spravna {
+            background-color: #4CAF50 !important;
+        }
+
+        .nespravna {
+            background-color: #f44336 !important;
+        }
+
+        #timer {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #FFCE56;
+        }
+
+        #vysledok {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧠 Quiz</h1>
+    <div id="timer">⏱ 10</div>
+    <div id="otazka" class="otazka"></div>
+    <div id="odpovede"></div>
+    <div id="vysledok"></div>
+
+    <script type="module" src="main.ts"></script>
+</body>
+</html>
